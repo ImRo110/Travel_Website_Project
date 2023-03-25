@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Website</title>
+    <meta name="description" content="This is a sample HTML5 page" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="/beach.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="main-container-2">
+      <div class="main-container-blurred"></div>
+      <div class="nav-container">
+        <div class="header-title">trxvl.</div>
+        <div class="header-links">
+          <a class="menuItem" href="/">Home</a>
+          <a class="menuItem" href="beach.html">Stays</a>
+          <a class="menuItem" href="beach.html">Flights</a>
+          <a class="menuItem" href="beach.html">Packages</a>
+          <a class="menuItem" href="beach.html">Sign Up</a>
+        </div>
+        <div onclick="toggle()" id="hamburger-id" class="hamburger">
+          <img
+            class="menuIcon"
+            src="./Images/hamburger icon.png"
+            width="20"
+            height="20"
+          />
+          <img
+            class="closeIcon"
+            src="./Images/cross png.jpg"
+            width="20"
+            height="20"
+          />
+        </div>
+
+        <!-- <div class="hamburger"><img src="Images/hamburger icon.png" width="30" height="30"></div> -->
+      </div>
+      <div class="Content-Wrapper">
+        <div class="Content">
+          <div class="main-title">The whole world awaits.</div>
+          <div class="search-box-container">
+            <div class="search-item">
+              <img src="./Images/Search.png" width="20px" height="20px" />
+              <input
+                type="text"
+                id="number"
+                placeholder="Search destinations, hotels"
+              />
+            </div>
+            <div class="search-item">
+              <img src="./Images/Calendar.png" alt="" />
+              <input type="text" id="number" placeholder="Check in" />
+            </div>
+            <div class="search-item">
+              <img src="./Images/Calendar.png" alt="" />
+              <input type="text" id="number" placeholder="Check out" />
+            </div>
+            <div class="search-item">
+              <img src="./Images/Passenger.png" width="20px" height="20px" />
+              <input type="text" id="number" placeholder="1 Room, 2 Adults" />
+            </div>
+            <div class="search-box">Search</div>
+          </div>
+          <p class="heading">Top categories</p>
+          <div class="Top-Category-List-contianer">
+            <div class="categories-image-container">
+              <img src="./Images/BeachImage.png" />
+              <p>Beaches</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Desserts.png" />
+              <p>Desserts</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Mountains.png" />
+              <p>Mountains</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/IconicCities.png" />
+              <p>Iconic Cities</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Houseboats.png" />
+              <p>Houseboats</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Countryside.png" />
+              <p>Country Side</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Camping.png" />
+              <p>Camping</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Castles.png" />
+              <p>Castles</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Skiing.png" />
+              <p>Skiing</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Tropical.png" />
+              <p>Tropical</p>
+            </div>
+          </div>
+
+          <!--Popular Beach Destination-->
+          <div class="popular-beach-destination">
+            <p class="heading" style="color: #ffffff">
+              Popular Beach Destination
+            </p>
+            <div class="long-card-container">
+              <!--Swiss Apls-->
+              <div class="long-card">
+                <img src="./Images/swissalps.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Swiss Apls
+                      <div><img src="./Images/Star.png" alt="" /> 4.7</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Hallstatt-->
+              <div class="long-card">
+                <img src="./Images/hallstatt.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Hallstatt
+                      <div><img src="./Images/Star.png" alt="" /> 4.9</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Faroe Island-->
+              <div class="long-card">
+                <img src="./Images/faroeisland.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Faroe Island
+                      <div><img src="./Images/Star.png" alt="" /> 4.5</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Innsbruck -->
+              <div class="long-card">
+                <img src="./Images/innsbruck.png" alt="" height="200px" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Innsbruck
+                      <div><img src="./Images/Star.png" alt="" /> 4.7</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Recently Viewed-->
+          <div class="popular-beach-destination">
+            <p class="heading" style="color: #000000">Recently Viewed</p>
+            <div
+              class="long-card-container"
+              style="display: flex; column-gap: 25px"
+            >
+              <!--Hallstatt-->
+              <div class="long-card">
+                <img src="./Images/hallstatt.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Hallstatt
+                      <div><img src="./Images/Star.png" alt="" /> 4.9</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Innsbruck -->
+              <div class="long-card">
+                <img src="./Images/innsbruck.png" alt="" height="200px" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Innsbruck
+                      <div><img src="./Images/Star.png" alt="" /> 4.9</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Summer Bonanza -->
+              <div
+                class="summerbonanza-container"
+                style="background: url('./Images/summerbonanza.png')"
+              >
+                <div class="summerbonanza-title">Summer Bonanza!</div>
+
+                <div class="summerbonanza-text">
+                  Enjoy confortable transfers in shared coaches
+                </div>
+                <div class="summerbonanza-text">
+                  Choose from 5 flights per week
+                </div>
+                <div class="summerbonanza-text">
+                  Get a free Rapid Antigen Test at selected hotels
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--All Inclusive Packages-->
+          <div class="popular-beach-destination">
+            <p class="heading" style="color: #000000">
+              All Inclusive Packages!
+            </p>
+            <div
+              class="long-card-container"
+              style="display: flex; column-gap: 25px"
+            >
+              <!--Valdi Funes-->
+              <div class="long-card">
+                <img src="./Images/valdifunes.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Valdi Funes
+                      <div><img src="./Images/Star.png" alt="" /> 4.7</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Ushuaia-->
+              <div class="long-card">
+                <img src="./Images/ushuaia.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Ushuaia
+                      <div><img src="./Images/Star.png" alt="" /> 4.9</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Berchtesgaden-->
+              <div class="long-card">
+                <img src="./Images/berchtesgaden.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Berchtesgaden
+                      <div><img src="./Images/Star.png" alt="" /> 4.5</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fussen -->
+              <div class="long-card">
+                <img src="./Images/fussen.png" alt="" height="200px" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Fussen
+                      <div><img src="./Images/Star.png" alt="" /> 4.7</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Honeymoon Freebies Special-->
+          <div class="popular-beach-destination">
+            <p class="heading" style="color: #000000">
+              Honeymoon Freebies Special
+            </p>
+            <div
+              class="long-card-container"
+              style="display: flex; column-gap: 25px"
+            >
+              <!--Mauritius-->
+              <div class="long-card">
+                <img src="./Images/Mauritius.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Mauritius
+                      <div><img src="./Images/Star.png" alt="" /> 4.7</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Havelock-->
+              <div class="long-card">
+                <img src="./Images/Havelock.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Havelock
+                      <div><img src="./Images/Star.png" alt="" /> 4.9</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Whitsunday Islands-->
+              <div class="long-card">
+                <img src="./Images/Whitsunday Islands.png" alt="" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Whitsunday Islands
+                      <div><img src="./Images/Star.png" alt="" /> 4.5</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Maldives -->
+              <div class="long-card">
+                <img src="./Images/Maldives.png" alt="" height="200px" />
+                <div class="long-card-content-wrapper">
+                  <div class="long-card-content">
+                    <div class="long-card-heading">
+                      Maldives
+                      <div><img src="./Images/Star.png" alt="" /> 4.7</div>
+                    </div>
+                    <div>
+                      <div class="long-card-days-text">3Days 4 Nights</div>
+                      <div class="card-icon-container">
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/flights.png" />
+                          <p class="card-icon-text">2 Flights</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/hotel.png" />
+                          <p class="card-icon-text">1 Hotel</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/transfers.png" />
+                          <p class="card-icon-text">2 Transfers</p>
+                        </div>
+                        <div class="card-icon-internal">
+                          <img class="menuIcon" src="./Images/activities.png" />
+                          <p class="card-icon-text">Beaches</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 15px">
+                      <li>Tour combo with return airport transfer</li>
+                      <li>City Tour</li>
+                      <li>Curious Corner</li>
+                    </div>
+                    <div class="long-card-discount-container">
+                      <p class="long-card-price">₹88,952</p>
+
+                      <p class="long-card-discount">
+                        ₹86,952
+                        <sub class="discount-subscript">Per person</sub>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Bottom Banner-->
+          <div class="bottom-container-wrapper">
+            <div class="bottom-container-wrapper-grid">
+              <div class="bottom-mockup-wrapper">
+                <div class="bottom-mockup-container">
+                  <img src="./Images/mobilefront.png" alt="" />
+                </div>
+              </div>
+
+              <div class="bottom-container-grid">
+                <div class="bottom-header">Your all-in-one travel app.</div>
+                <div class="bottom-description">
+                  Book flights, hotels, trains & rental cars anywhere in the
+                  world in just seconds. Get real-time flight updates, travel
+                  info, exclusive deals, and 30% more Trip Coins only on the
+                  app!
+                </div>
+                <div class="bottom-email">
+                  <div class="bottom-email-tab1">Mobile</div>
+                  <div class="bottom-email-tab2">Email</div>
+                </div>
+                <div class="bottom-enter-number">
+                  <p>
+                    Enter your phone number to receive a text with a link to
+                    download the app.
+                  </p>
+                </div>
+                <div class="bottom-mobile-number-wrapper">
+                  <div class="bottom-mobile-number-container">
+                    <div class="bottom-mobile-number-content">
+                      <p>+91</p>
+                      <input
+                        type="number"
+                        id="number"
+                        placeholder="Mobile Number"
+                      />
+                    </div>
+                    <div class="bottom-mobile-number-content-search">
+                      Search
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bottom-vertical-or">
+                  <div class="bottom-vertical-or-line"></div>
+                  or
+                  <div class="bottom-vertical-or-line"></div>
+                </div>
+                <div class="bottom-marketplace">
+                  <img
+                    src="./Images/googleplaystore.png"
+                    width="202.82px"
+                    height="60.85px"
+                  />
+                  <img
+                    src="./Images/appstore.png"
+                    width="202.82px"
+                    height="60.85px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="footer-container">
+              <p class="footer-title">Trxvl.</p>
+              <div class="footer-links">
+                <a>Seslendirme ve Alt Jazz</a>
+                <a>Media Market</a>
+                <a>Gillie</a>
+                <a>Size Last</a>
+                <div
+                  style="
+                    border: 1px #808080;
+                    border-style: solid;
+                    padding: 7px;
+                    margin-left: -7px;
+                  "
+                >
+                  Helmet KOD
+                </div>
+                <div style="margin-left: -12px">
+                  © 1997-2021 Netflix, Inc. {i-062d573a0ee099242}
+                </div>
+              </div>
+              <div class="footer-links">
+                <a>Self Betimes</a>
+                <a>Yatırımcı İlişkileri</a>
+                <a>Basal Himmler</a>
+              </div>
+              <div class="footer-links">
+                <a>Yard Market</a>
+                <a>Is İmkanları</a>
+                <a>Car Tercihleri</a>
+              </div>
+              <div class="footer-links">
+                <a>Hedge Karla</a>
+                <a>Mullein Koşulları</a>
+                <a>Autumnal Bulgier</a>
+                <div class="footer-image-container">
+                  <img src="./Images/facebook.png" width="24px" height="24px" />
+                  <img
+                    src="./Images/instagram.png"
+                    width="24px"
+                    height="24px"
+                  />
+                  <img
+                    src="./Images/twitter.png"
+                    width="24px"
+                    height="19.5px"
+                  />
+                  <img
+                    src="./Images/youtube.png"
+                    width="24px"
+                    height="16.5px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+  </body>
+</html>

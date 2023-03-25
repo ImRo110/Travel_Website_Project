@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Website</title>
+    <meta name="description" content="This is a sample HTML5 page" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-container-blurred"></div>
+      <div class="nav-container">
+        <div class="header-title">trxvl.</div>
+        <div class="header-links">
+          <a class="menuItem" href="/">Home</a>
+          <a class="menuItem" href="beach.html">Stays</a>
+          <a class="menuItem" href="beach.html">Flights</a>
+          <a class="menuItem" href="beach.html">Packages</a>
+          <a class="menuItem" href="beach.html">Sign Up</a>
+        </div>
+
+        <!-- <div class="hamburger"><img src="Images/hamburger icon.png" width="30" height="30"></div> -->
+      </div>
+
+      <div class="nav-container-mobile">
+        <div class="hamburger">
+          <img
+            class="menuIcon"
+            src="./Images/hamburger icon.png"
+            width="20"
+            height="20"
+          />
+        </div>
+        <div class="header-title">trxvl.</div>
+      </div>
+
+      <div class="Content-Wrapper">
+        <div class="Content">
+          <div class="main-title">The whole world awaits.</div>
+          <div class="search-box-container">
+            <div class="search-item">
+              <img src="./Images/Search.png" width="20px" height="20px" />
+              <input
+                type="text"
+                id="number"
+                placeholder="Search destinations, hotels"
+              />
+            </div>
+            <div class="search-item" id="checkin">
+              <img src="./Images/Calendar.png" />
+              <input type="text" id="number" placeholder="Check in" />
+            </div>
+            <div class="search-item" id="checkout">
+              <img src="./Images/Calendar.png" />
+              <input type="text" id="number" placeholder="Check out" />
+            </div>
+            <div class="checkinout">
+              <div class="checkinout-content">
+                <img src="./Images/Calendar.png" />
+                <input type="text" id="number" placeholder="Check in" />
+              </div>
+              <div
+                style="
+                  width: 12.98px;
+                  height: 0px;
+                  opacity: 0.4;
+                  border: 1.00001px solid #ffffff;
+                  transform: rotate(90deg);
+                  padding: 0px 10px;
+                  margin: 10px 0px;
+                "
+              ></div>
+              <div class="checkinout-content">
+                <img src="./Images/Calendar.png" />
+                <input type="text" id="number" placeholder="Check out" />
+              </div>
+            </div>
+            <div class="search-item">
+              <img src="./Images/Passenger.png" width="20px" height="20px" />
+              <input type="text" id="number" placeholder="1 Room, 2 Adults" />
+            </div>
+            <div class="search-box">Search</div>
+          </div>
+
+          <!--Top-Category PC-->
+          <p class="heading">Top categories</p>
+          <div class="Top-Category-List-contianer">
+            <div class="categories-image-container">
+              <img src="./Images/BeachImage.png" />
+              <p>Beaches</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Desserts.png" />
+              <p>Desserts</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Mountains.png" />
+              <p>Mountains</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/IconicCities.png" />
+              <p>Iconic Cities</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Houseboats.png" />
+              <p>Houseboats</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Countryside.png" />
+              <p>Country Side</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Camping.png" />
+              <p>Camping</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Castles.png" />
+              <p>Castles</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Skiing.png" />
+              <p>Skiing</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Tropical.png" />
+              <p>Tropical</p>
+            </div>
+          </div>
+
+          <!--Top-Category mob-->
+          <div class="Top-Category-List-contianer-mob">
+            <div class="categories-image-container">
+              <img src="./Images/BeachImage_mobile.png" />
+              <p>Beaches</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Desserts_mobile.png" />
+              <p>Desserts</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Mountains_mobile.png" />
+              <p>Mountains</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/IconicCities_mobile.png" />
+              <p>Iconic Cities</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Houseboats_mobile.png" />
+              <p>Houseboats</p>
+            </div>
+          </div>
+
+          <!--Top Vacation Destination-->
+          <p class="heading">Top Vacation Destination</p>
+
+          <div class="Top-Vacation-Destination">
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/indonesia.png)"
+            >
+              <p>Bali, Indonesia</p>
+            </div>
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/ireland.png)"
+            >
+              <p>Kerry, Ireland</p>
+            </div>
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/australia.png)"
+            >
+              <p>Sydney, Australia</p>
+            </div>
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/paris.png)"
+            >
+              <p>Paris, France</p>
+            </div>
+          </div>
+
+          <!-- Offers -->
+
+          <div class="offers">
+            <p class="heading" style="color: #000000">Offers</p>
+            <div class="offers-wrapper">
+              <div class="offers-container">
+                <img
+                  src="./Images/offers1.png"
+                  style="border-radius: 25px; cursor: pointer"
+                />
+                <div class="offers-container-text">
+                  <div
+                    style="display: flex; flex-direction: column; row-gap: 10px"
+                  >
+                    <div class="offers-text-1">Domestic Flights</div>
+                    <div class="offers-text-2">
+                      <h3>Huge savings on flight with trxvl.</h3>
+                    </div>
+                    <div class="offers-text-3">
+                      Book domestic flights starting @ just ₹1459
+                    </div>
+                  </div>
+                  <div class="offers-button">Book Now</div>
+                </div>
+              </div>
+
+              <div class="offers-container">
+                <img
+                  src="./Images/offers2.png"
+                  alt=""
+                  style="border-radius: 25px; cursor: pointer"
+                />
+                <div class="offers-container-text">
+                  <div
+                    style="display: flex; flex-direction: column; row-gap: 10px"
+                  >
+                    <div class="offers-text-1">International Hotels</div>
+                    <div class="offers-text-2">
+                      <h3>Enjoy upto 20% off on International Hotels</h3>
+                    </div>
+                    <div class="offers-text-3">
+                      Make the most of this deal on your first booking with
+                      trxvl.
+                    </div>
+                  </div>
+                  <div class="offers-button">Book Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="heading" style="color: #000000">Browse by property type</p>
+          <div
+            class="Top-Vacation-Destination"
+            style="display: flex; gap: 20px"
+          >
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/propertytype1.png)"
+            >
+              <p class="vacation-image-text">Hotels</p>
+            </div>
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/propertytype2.png)"
+            >
+              <p class="vacation-image-text">Apartments</p>
+            </div>
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/propertytype3.png)"
+            >
+              <p class="vacation-image-text">Resorts</p>
+            </div>
+            <div
+              class="vacation-image"
+              style="--source: url(./Images/propertytype4.png)"
+            >
+              <p class="vacation-image-text">Villas</p>
+            </div>
+          </div>
+
+          <!--Banner -->
+          <div class="banner1-container">
+            <div class="banner1-content">
+              <p class="banner1-text1">Plan your trip with travel expert</p>
+              <p class="banner1-text2">
+                Our professional advisors can craft your perfect itinerary
+              </p>
+            </div>
+          </div>
+
+          <!--Connect with other travelers in our community-->
+          <div>
+            <p class="heading" style="color: #000000">
+              Connect with other travelers in our community
+            </p>
+            <div class="community-wrapper">
+              <div class="community-container">
+                <div>
+                  <img
+                    src="./Images/india.png"
+                    alt=""
+                    style="border-radius: 12px; cursor: pointer"
+                  />
+                </div>
+                <div class="community-text-wrapper1">
+                  <div class="community-text-wrapper2">
+                    <div class="community-text-title">India</div>
+                    <div class="community-text-content">Travel community</div>
+                    <div class="community-text-content">155,073 travelers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="community-container">
+                <div>
+                  <img
+                    src="./Images/traveltalk.png"
+                    alt=""
+                    style="border-radius: 12px; cursor: pointer"
+                  />
+                </div>
+                <div class="community-text-wrapper1">
+                  <div class="community-text-wrapper2">
+                    <div class="community-text-title">Travel Talk</div>
+                    <div class="community-text-content">Travel community</div>
+                    <div class="community-text-content">155,073 travelers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="community-container">
+                <div>
+                  <img
+                    src="./Images/beach.png"
+                    alt=""
+                    style="border-radius: 12px; cursor: pointer"
+                  />
+                </div>
+                <div class="community-text-wrapper1">
+                  <div class="community-text-wrapper2">
+                    <div class="community-text-title">Beach</div>
+                    <div class="community-text-content">Travel community</div>
+                    <div class="community-text-content">155,073 travelers</div>
+                  </div>
+                </div>
+              </div>
+              <div class="community-container">
+                <div>
+                  <img
+                    src="./Images/communitymountains.png"
+                    alt=""
+                    style="border-radius: 12px; cursor: pointer"
+                  />
+                </div>
+                <div class="community-text-wrapper1">
+                  <div class="community-text-wrapper2">
+                    <div class="community-text-title">Mountains</div>
+                    <div class="community-text-content">Travel community</div>
+                    <div class="community-text-content">155,073 travelers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Footer-->
+          <div class="footer">
+            <div class="footer-container">
+              <div class="footer-title">Trxvl.</div>
+              <div class="footer-links">
+                <a>Seslendirme ve Alt Jazz</a>
+                <a>Media Market</a>
+                <a>Gillie</a>
+                <a>Size Last</a>
+              </div>
+              <div class="footer-links">
+                <a>Self Betimes</a>
+                <a>Yatırımcı İlişkileri</a>
+                <a>Basal Himmler</a>
+              </div>
+              <div class="footer-links">
+                <a>Yard Market</a>
+                <a>Is İmkanları</a>
+                <a>Car Tercihleri</a>
+              </div>
+              <div class="footer-links">
+                <a>Hedge Karla</a>
+                <a>Mullein Koşulları</a>
+                <a>Autumnal Bulgier</a>
+              </div>
+              <div class="footer-bottom-row1">
+                <div
+                  style="border: 1px #808080; border-style: solid; padding: 7px"
+                >
+                  Helmet KOD
+                </div>
+                <div class="footer-image-container">
+                  <img src="./Images/facebook.png" width="24px" height="24px" />
+                  <img
+                    src="./Images/instagram.png"
+                    width="24px"
+                    height="24px"
+                  />
+                  <img
+                    src="./Images/twitter.png"
+                    width="24px"
+                    height="19.5px"
+                  />
+                  <img
+                    src="./Images/youtube.png"
+                    width="24px"
+                    height="16.5px"
+                  />
+                </div>
+              </div>
+              <div class="footer-bottom-row2">
+                <div>© 1997-2021 Netflix, Inc. {i-062d573a0ee099242}</div>
+              </div>
+            </div>
+          </div>
+          <!--Mobile Footer-->
+          <div class="mobile-footer-wrapper">
+            <div class="mobile-footer-container">
+              <img src="./Images/home.png" alt="" width="20" height="21" />
+              <p>Home</p>
+            </div>
+            <div class="mobile-footer-container">
+              <img src="./Images/packages.png" alt="" width="20" height="21" />
+              <p>Packages</p>
+            </div>
+            <div class="mobile-footer-container">
+              <img src="./Images/stays.png" alt="" width="20" height="21" />
+              <p>Stays</p>
+            </div>
+            <div class="mobile-footer-container">
+              <img src="./Images/flights.png" alt="" width="20" height="21" />
+              <p>Flights</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

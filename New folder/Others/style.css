@@ -1,0 +1,249 @@
+/* Makes all h3 headings of this color */
+/*h3{ 
+    color: rgb(12, 67, 184);
+} */
+
+/*
+.first-title {
+    color: blue;
+}
+
+#youtube-link {
+    color: purple;
+}
+Part 1 Ends*/
+
+/*
+h1{  
+    color: rgb(12, 67, 184);
+} 
+.random h1{
+    color: red;
+}
+
+.my-list + ul{
+    list-style:none ;
+}
+
+ul > li{ 
+    color:aqua;
+}
+
+ul li {
+    color: rebeccapurple;
+}
+
+.nav-links li {
+    color: hotpink;
+}
+
+.nav-links li a {
+    color:black;
+}
+/*Part 2 ends */
+
+/* .links {
+    color:red;
+} /* Changes color of everything */
+
+/*
+.my-list:nth-child(1){
+    color: rgb(98, 28, 163);
+} /* Changes only heading color */
+/*
+.links:nth-child(1){
+    color: rgb(18, 92, 189);
+} /* Changes whole list color */
+
+/*
+.links li:nth-child(1){
+    color:orange;
+}  Changes only first element in list color 
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+h1 {
+    color: magenta;
+}
+
+
+h1{
+    margin: 50px 20px 10px 5px;
+    background-color: red;
+}
+
+h1{
+    padding-left: 5px;
+    padding-top: 50px ;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 16px;
+}
+/*
+.text-section {
+    font-size: 1.5em; /* Size is 16 * 1.5 =24
+}
+*/ 
+/*
+.text-section div {
+    font-size: 1.5em; /* Size is 16 * 1.5 * 1.5 =36
+}
+
+
+.text-section div{
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+.text-section {
+    font-size: 1.5rem; 
+}
+
+.text-section div {
+    font-size: 2.5rem; 
+}
+*/
+
+/*
+html{
+    font-size: 62.5%;
+}
+
+button{
+    margin: 10rem;
+    padding: 2rem 4rem;
+    
+    border: 0.3rem solid rgb(16, 145, 250);
+    color: white;
+    border-radius: 2.4rem;
+    border-radius: 1rem;
+    background: rgb(15, 123, 211);
+}
+*/
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+a{
+    display: block;
+    height: 3rem;
+    text-align: center;
+    background-color: skyblue;
+}
+
+a{
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem;
+    text-align: center;
+    background-color: skyblue;
+}
+*/
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container {
+    background: blue;
+    width: 80%;
+    height: 80%;
+    margin:auto;
+    position: relative;
+}
+
+html, body{
+    height: 200%;
+}
+
+.box1, .box2, .box3 
+{
+    width: 20%;
+    height: 20%;
+    
+}
+
+.box1{
+    background: purple;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    
+}
+
+.box2{
+    background: red;
+    position: relative;
+    left: 4em;
+    
+}
+
+.box3{
+    background: skyblue;
+    position: sticky;
+    top: 0%;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    height: 200%;
+}
+
+button{
+    padding: 2rem 4rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background: blue;
+    padding: 3rem 6rem;
+}
+
+input:focus{
+    background: blue;
+}
