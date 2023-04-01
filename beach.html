@@ -22,22 +22,20 @@
           <a class="menuItem" href="beach.html">Packages</a>
           <a class="menuItem" href="beach.html">Sign Up</a>
         </div>
-        <div onclick="toggle()" id="hamburger-id" class="hamburger">
+
+        <!-- <div class="hamburger"><img src="Images/hamburger icon.png" width="30" height="30"></div> -->
+      </div>
+
+      <div class="nav-container-mobile">
+        <div class="hamburger">
           <img
             class="menuIcon"
             src="./Images/hamburger icon.png"
             width="20"
             height="20"
           />
-          <img
-            class="closeIcon"
-            src="./Images/cross png.jpg"
-            width="20"
-            height="20"
-          />
         </div>
-
-        <!-- <div class="hamburger"><img src="Images/hamburger icon.png" width="30" height="30"></div> -->
+        <div class="header-title">trxvl.</div>
       </div>
       <div class="Content-Wrapper">
         <div class="Content">
@@ -51,13 +49,34 @@
                 placeholder="Search destinations, hotels"
               />
             </div>
-            <div class="search-item">
-              <img src="./Images/Calendar.png" alt="" />
+            <div class="search-item" id="checkin">
+              <img src="./Images/Calendar.png" />
               <input type="text" id="number" placeholder="Check in" />
             </div>
-            <div class="search-item">
-              <img src="./Images/Calendar.png" alt="" />
+            <div class="search-item" id="checkout">
+              <img src="./Images/Calendar.png" />
               <input type="text" id="number" placeholder="Check out" />
+            </div>
+            <div class="checkinout">
+              <div class="checkinout-content">
+                <img src="./Images/Calendar.png" />
+                <input type="text" id="number" placeholder="Check in" />
+              </div>
+              <div
+                style="
+                  width: 12.98px;
+                  height: 0px;
+                  opacity: 0.4;
+                  border: 1.00001px solid #ffffff;
+                  transform: rotate(90deg);
+                  padding: 0px 10px;
+                  margin: 10px 0px;
+                "
+              ></div>
+              <div class="checkinout-content">
+                <img src="./Images/Calendar.png" />
+                <input type="text" id="number" placeholder="Check out" />
+              </div>
             </div>
             <div class="search-item">
               <img src="./Images/Passenger.png" width="20px" height="20px" />
@@ -65,6 +84,8 @@
             </div>
             <div class="search-box">Search</div>
           </div>
+
+          <!--Top-Category PC-->
           <p class="heading">Top categories</p>
           <div class="Top-Category-List-contianer">
             <div class="categories-image-container">
@@ -106,6 +127,30 @@
             <div class="categories-image-container">
               <img src="./Images/Tropical.png" />
               <p>Tropical</p>
+            </div>
+          </div>
+
+          <!--Top-Category mob-->
+          <div class="Top-Category-List-contianer-mob">
+            <div class="categories-image-container">
+              <img src="./Images/BeachImage_mobile.png" />
+              <p>Beaches</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Desserts_mobile.png" />
+              <p>Desserts</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Mountains_mobile.png" />
+              <p>Mountains</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/IconicCities_mobile.png" />
+              <p>Iconic Cities</p>
+            </div>
+            <div class="categories-image-container">
+              <img src="./Images/Houseboats_mobile.png" />
+              <p>Houseboats</p>
             </div>
           </div>
 
@@ -255,7 +300,7 @@
               </div>
               <!-- Innsbruck -->
               <div class="long-card">
-                <img src="./Images/innsbruck.png" alt="" height="200px" />
+                <img src="./Images/innsbruck.png" alt="" />
                 <div class="long-card-content-wrapper">
                   <div class="long-card-content">
                     <div class="long-card-heading">
@@ -305,10 +350,7 @@
           <!--Recently Viewed-->
           <div class="popular-beach-destination">
             <p class="heading" style="color: #000000">Recently Viewed</p>
-            <div
-              class="long-card-container"
-              style="display: flex; column-gap: 25px"
-            >
+            <div class="long-card-container">
               <!--Hallstatt-->
               <div class="long-card">
                 <img src="./Images/hallstatt.png" alt="" />
@@ -358,7 +400,7 @@
 
               <!-- Innsbruck -->
               <div class="long-card">
-                <img src="./Images/innsbruck.png" alt="" height="200px" />
+                <img src="./Images/innsbruck.png" />
                 <div class="long-card-content-wrapper">
                   <div class="long-card-content">
                     <div class="long-card-heading">
@@ -405,7 +447,10 @@
               <!-- Summer Bonanza -->
               <div
                 class="summerbonanza-container"
-                style="background: url('./Images/summerbonanza.png')"
+                style="
+                  background: url('./Images/summerbonanza.png');
+                  background-repeat: no-repeat;
+                "
               >
                 <div class="summerbonanza-title">Summer Bonanza!</div>
 
@@ -427,10 +472,7 @@
             <p class="heading" style="color: #000000">
               All Inclusive Packages!
             </p>
-            <div
-              class="long-card-container"
-              style="display: flex; column-gap: 25px"
-            >
+            <div class="long-card-container">
               <!--Valdi Funes-->
               <div class="long-card">
                 <img src="./Images/valdifunes.png" alt="" />
@@ -623,10 +665,7 @@
             <p class="heading" style="color: #000000">
               Honeymoon Freebies Special
             </p>
-            <div
-              class="long-card-container"
-              style="display: flex; column-gap: 25px"
-            >
+            <div class="long-card-container">
               <!--Mauritius-->
               <div class="long-card">
                 <img src="./Images/Mauritius.png" alt="" />
@@ -815,129 +854,71 @@
           </div>
 
           <!--Bottom Banner-->
-          <div class="bottom-container-wrapper">
-            <div class="bottom-container-wrapper-grid">
-              <div class="bottom-mockup-wrapper">
-                <div class="bottom-mockup-container">
-                  <img src="./Images/mobilefront.png" alt="" />
-                </div>
-              </div>
+        </div>
 
-              <div class="bottom-container-grid">
-                <div class="bottom-header">Your all-in-one travel app.</div>
-                <div class="bottom-description">
-                  Book flights, hotels, trains & rental cars anywhere in the
-                  world in just seconds. Get real-time flight updates, travel
-                  info, exclusive deals, and 30% more Trip Coins only on the
-                  app!
-                </div>
-                <div class="bottom-email">
-                  <div class="bottom-email-tab1">Mobile</div>
-                  <div class="bottom-email-tab2">Email</div>
-                </div>
-                <div class="bottom-enter-number">
-                  <p>
-                    Enter your phone number to receive a text with a link to
-                    download the app.
-                  </p>
-                </div>
-                <div class="bottom-mobile-number-wrapper">
-                  <div class="bottom-mobile-number-container">
-                    <div class="bottom-mobile-number-content">
-                      <p>+91</p>
-                      <input
-                        type="number"
-                        id="number"
-                        placeholder="Mobile Number"
-                      />
-                    </div>
-                    <div class="bottom-mobile-number-content-search">
-                      Search
-                    </div>
-                  </div>
-                </div>
-
-                <div class="bottom-vertical-or">
-                  <div class="bottom-vertical-or-line"></div>
-                  or
-                  <div class="bottom-vertical-or-line"></div>
-                </div>
-                <div class="bottom-marketplace">
-                  <img
-                    src="./Images/googleplaystore.png"
-                    width="202.82px"
-                    height="60.85px"
-                  />
-                  <img
-                    src="./Images/appstore.png"
-                    width="202.82px"
-                    height="60.85px"
-                  />
-                </div>
+        <!--Footer-->
+        <div class="footer">
+          <div class="footer-container">
+            <div class="footer-title">Trxvl.</div>
+            <div class="footer-links">
+              <a>Seslendirme ve Alt Jazz</a>
+              <a>Media Market</a>
+              <a>Gillie</a>
+              <a>Size Last</a>
+            </div>
+            <div class="footer-links">
+              <a>Self Betimes</a>
+              <a>Yatırımcı İlişkileri</a>
+              <a>Basal Himmler</a>
+            </div>
+            <div class="footer-links">
+              <a>Yard Market</a>
+              <a>Is İmkanları</a>
+              <a>Car Tercihleri</a>
+            </div>
+            <div class="footer-links">
+              <a>Hedge Karla</a>
+              <a>Mullein Koşulları</a>
+              <a>Autumnal Bulgier</a>
+            </div>
+            <div class="footer-bottom-row1">
+              <div
+                style="border: 1px #808080; border-style: solid; padding: 7px"
+              >
+                Helmet KOD
               </div>
+              <div class="footer-image-container">
+                <img src="./Images/facebook.png" width="24px" height="24px" />
+                <img src="./Images/instagram.png" width="24px" height="24px" />
+                <img src="./Images/twitter.png" width="24px" height="19.5px" />
+                <img src="./Images/youtube.png" width="24px" height="16.5px" />
+              </div>
+            </div>
+            <div class="footer-bottom-row2">
+              <div>© 1997-2021 Netflix, Inc. {i-062d573a0ee099242}</div>
             </div>
           </div>
-
-          <div class="footer">
-            <div class="footer-container">
-              <p class="footer-title">Trxvl.</p>
-              <div class="footer-links">
-                <a>Seslendirme ve Alt Jazz</a>
-                <a>Media Market</a>
-                <a>Gillie</a>
-                <a>Size Last</a>
-                <div
-                  style="
-                    border: 1px #808080;
-                    border-style: solid;
-                    padding: 7px;
-                    margin-left: -7px;
-                  "
-                >
-                  Helmet KOD
-                </div>
-                <div style="margin-left: -12px">
-                  © 1997-2021 Netflix, Inc. {i-062d573a0ee099242}
-                </div>
-              </div>
-              <div class="footer-links">
-                <a>Self Betimes</a>
-                <a>Yatırımcı İlişkileri</a>
-                <a>Basal Himmler</a>
-              </div>
-              <div class="footer-links">
-                <a>Yard Market</a>
-                <a>Is İmkanları</a>
-                <a>Car Tercihleri</a>
-              </div>
-              <div class="footer-links">
-                <a>Hedge Karla</a>
-                <a>Mullein Koşulları</a>
-                <a>Autumnal Bulgier</a>
-                <div class="footer-image-container">
-                  <img src="./Images/facebook.png" width="24px" height="24px" />
-                  <img
-                    src="./Images/instagram.png"
-                    width="24px"
-                    height="24px"
-                  />
-                  <img
-                    src="./Images/twitter.png"
-                    width="24px"
-                    height="19.5px"
-                  />
-                  <img
-                    src="./Images/youtube.png"
-                    width="24px"
-                    height="16.5px"
-                  />
-                </div>
-              </div>
-            </div>
+        </div>
+        <!--Mobile Footer-->
+        <div class="mobile-footer-wrapper">
+          <div class="mobile-footer-container">
+            <img src="./Images/home.png" alt="" width="20" height="21" />
+            <p>Home</p>
+          </div>
+          <div class="mobile-footer-container">
+            <img src="./Images/packages.png" alt="" width="20" height="21" />
+            <p>Packages</p>
+          </div>
+          <div class="mobile-footer-container">
+            <img src="./Images/stays.png" alt="" width="20" height="21" />
+            <p>Stays</p>
+          </div>
+          <div class="mobile-footer-container">
+            <img src="./Images/flights.png" alt="" width="20" height="21" />
+            <p>Flights</p>
           </div>
         </div>
       </div>
     </div>
-    <!--Footer-->
   </body>
 </html>
